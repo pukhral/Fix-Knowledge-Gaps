@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Section 1 -  -->
+      <header>
+        <div id="page-top">
+          <h1 class="title">Shopaholic</h1>
+          <p>My shopping list</p>
+          <form id="search-item">
+            <input type="text" placeholder="Search items..." />
+            <div id="check">
+              <label for="hide">Hide list</label>
+              <input type="checkbox" id="hide" />
+            </div>
+          </form>
+        </div>
+      </header>
+
+      <!-- Section 2 -->
+      <form id="add-item">
+        <button>Add</button>
+        <input type="text" placeholder="What do you want to buy? " />
+      </form>
+
+      <!-- Section 3 -->
+      <div id="grocery-list">
+        <h2 class="title">Items To Buy</h2>
+        <ul>
+          <li>
+            <span class="item">Milk</span>
+            <span class="delete">Delete</span>
+          </li>
+          <li>
+            <span class="item">Chips</span>
+            <span class="delete">Delete</span>
+          </li>
+          <li>
+            <span class="item">Bread</span>
+            <span class="delete">Delete</span>
+          </li>
+        </ul>
+      </div>
+      <!-- Section 4 -->
+      <div id="tab-wrapper">
+        <ul class="heading">
+          <li data-clicked="#joke" class="active">Food Joke</li>
+          <li data-clicked="#facts">Did you know</li>
+        </ul>
+        <div id="joke" class="panel">
+          <p>What do you call a fake noodle?</p>
+          <button id="showAnswer">Answer</button>
+          <p id="answer"></p>
+        </div>
+        <div id="facts" class="panel">
+          <p>This is what I learned about food this week</p>
+          <p>Never pour water on grease fire</p>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
